@@ -1,4 +1,6 @@
 import express from 'express';
+import 'reflect-metadata';
+import "./database/index.ts";
 
 const app = express();
 
@@ -13,5 +15,4 @@ app.post("/", (request, response) => {
         message: "Os dados foram salvos com sucesso!"
     });
 });
-
-app.listen(40671, () => console.log("Server is running!"));
+app.listen(12025, () => console.log("Server is running!"));
